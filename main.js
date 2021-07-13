@@ -9,4 +9,4 @@ app.get("/", (req, res) => {
 app.get("/home.css", (req, res) => {
     res.sendFile(path.join(__dirname + '/frontend/home.css'));
 });
-app.listen(5000);
+app.listen(process.env.PORT || 31415);
