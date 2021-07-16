@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+/* GLOBAL STYLING */
 
 * {
     box-sizing: border-box;
@@ -9,30 +8,45 @@
 }
 
 header {
+    flex-wrap: nowrap;
     background-color: rgb(226, 226, 226);
     padding: 10px 10px;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 } header h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
 
 .navLinks {
+    display: inline-block;
     list-style: none;
 } .navLinks li { 
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
 
     display: inline-block;
-    padding: 0px 20px;
+    padding: 5px 15px;
 } .navLinks li a {
     text-decoration: none;
     color:rgb(58, 58, 58);
 
-    transition: all 0.25s ease 0s;
+    transition: all 0.25s;
 } .navLinks li a:hover {
     color: #797979;
     font-size: 20px;
 }
+
+@media (max-width: 1050px) {
+    header {
+        flex-direction: column;
+    }
+    .navLinks {
+        text-align: center;
+    }
+}
+
+/* PAGE-SPECIFIC STYLING */
