@@ -15,7 +15,7 @@ function getNews() {
   request.onreadystatechange = function() {
     if (this.status==200 && this.readyState==4) {
       infoJson=JSON.parse(this.responseText);
-      for (let i =0; i < 50;i++) {
+      for (let i =0; i < 20;i++) {
         document.getElementById("news").innerHTML += 
         `<li class="list-group-item"> <a href="${infoJson.articles[i].link}"> ${infoJson.articles[i].title}</a> </li>`;
         document.getElementById("news").innerHTML += 
