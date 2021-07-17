@@ -1,6 +1,13 @@
 /* GLOBAL STYLING */
- 
-/* The Overlay (background) */
+.container {
+  width: 936px;
+  padding: 25px;
+  overflow: hidden;
+  margin: 100px auto;
+  border-radius: 25px;
+  border: 10px solid #0059dd;
+  
+}
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
   height: 100%;
@@ -48,35 +55,16 @@
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
 }
-.container {
-  width: 936px;
-  padding: 25px;
-  overflow: hidden;
-  margin: 100px auto;
-  border-radius: 25px;
-  border: 10px solid #0059dd;
-  
-}
 
-h1 {
-  font-size: 6em;
-  color: #484949;
-}
-
-#socDesc {
-  color: black;
-}
-
-html,body {
-  height: 125%;
-}
 * {
     box-sizing: border-box;
     margin:0;
@@ -125,19 +113,20 @@ header {
     }
 }
 
-/* PAGE-SPECIFIC STYLING */
-
-main .purpose {
-    margin: 10px;
-    float: left;
-} main .purpose h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-} main .purpose p {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  background-color: lightgray;
+}
+  
+.row {
+  display: flex;
 }
 
-main .rightCol {
-    display:block;
-    margin: 10px;
-} 
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+#graphs {
+  text-align: center;
+  width:100%;
+}

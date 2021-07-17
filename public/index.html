@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Covid Info Portal </title>
+    <script src="index.js"></script>
+    <title> Covid Info Portal  </title>
 </head>
 <body>
-
+  
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html"> Home </a>
+    <a href="links.html"> Covid Links </a>
+    <a href="stats.html"> Covid Stats </a>
+    <a href="news.html"> Covid News </a>
+    <a href="charities.html"> Charities </a>
+  </div>
+</div> <!-- BTW I moved the "openNav() and closeNav()" functions to index.js-->
+     
+</div>
     <header>
-        <img src="logo.png" alt="COVID INFO PORTAL">
+        <img src="img/logo.png" alt="COVID INFO PORTAL">
         <nav>
-            <ul class="navLinks">
-                <li><a href="#"> Home </a></li>
-                <li><a href="chatbot.html"> Chatbot </a></li>
-                <li><a href="#"> Covid Links </a></li>
-                <li><a href="#"> Covid Stats </a></li>
-                <li><a href="#"> Covid News </a></li>
-                <li><a href="#"> Charities </a></li>
-            </ul>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
         </nav>
     </header>
+    
     <main>
         <section class="purpose">
-            <h2>Purpose</h2>
-            <br>
-            <p>
-                “In a crisis, it is acceptable to have more questions 
-                than answers. In a crisis there is no room for ‘not-invented yet’. 
-                In a crisis we should all be learners”. 
-                Through this forum we have constructed we anticipate to distinctly 
+          <div class="jumbotron">
+            <h1 class="display-4">Purpose</h1>
+            <p class="lead">
+              <div class="card">
+              <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                  <p>“In a crisis, it is acceptable to have more questions 
+                  than answers. In a crisis there is no room for ‘not-invented yet’. 
+                  In a crisis we should all be learners”. </p>
+                <footer class="blockquote-footer">
+                By H.R.H. Princess Laurentien of the Netherlands
+                <cite title="Source Title">Source: OECD Education and Skills Today</cite></footer>
+              </blockquote>
+              </div>
+              </div>
+                <br>
+                Through this website we have constructed, we anticipate to distinctly 
                 inform the communal about the current affairs about Covid-19. 
+                <br>
                 This web-portal connects you to assorted web pages bringing you 
                 up-to-date information about the pandemic. 
                 With the help of this website we’d like to share basic healthcare 
-                details allowing people to be aware the current situation. 
-            </p>
-            <br>
-            <p>
-                The Portal incorporates links to websites which share key information 
+                details allowing people to be aware the current situation. The Portal incorporates links to websites which share key information 
                 regarding Covid-19 ranging from the number of cases per day to number of 
                 vaccinated people. It also pinpoints accessible Hospitals/Clinics; 
                 thus, assisting people. All in all the website shares facts, news and external 
                 figures about the pandemic which we believe accurately informs the audience about 
-                the highly impactful virus. 
-            </p>
-        </section>
-        <section class="rightCol">
-            <h1> Test </h1>
+                the highly impactful virus. We also have a Charity page encompassed into the web-page which can be used to make any benefactions. </p>
+              <hr class="my-4">
+              </div>
+              <br>
         </section>
     </main>
 
-    <script src="index.js"></script>
+  <script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiM2N2MxOGUiLCJ3ZWIiOnsiYm90SWQiOiI2MGYyMDE0YTI0OTc5YjAwMTViYzU0ZGMiLCJ0aGVtZSI6IiM2N2MxOGUifX0=" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4></script>
 </body>
 </html>
+
+
