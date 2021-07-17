@@ -1,4 +1,6 @@
-# xdhack
+![](https://github.com/return0jz/xdhack/blob/master/READMEimg.png)
+
+# Covid Info Portal
 A product for XdHack Toronto made by first-time hackathon participants!
 
 # Credits:
