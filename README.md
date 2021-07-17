@@ -1,5 +1,5 @@
 # xdhack
-A product for XdHack Toronto!
+A product for XdHack Toronto made by first-time hackathon participants!
 
 # Credits:
 - Meet Pandey (MYeet#5031)
