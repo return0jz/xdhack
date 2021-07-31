@@ -3,7 +3,7 @@
 # Covid Info Portal
 A product for XdHack Toronto made by first-time hackathon participants!
 
-# Credits:
+# Credits (discord name):
 - Meet Pandey (MYeet#5031)
 - Niharika Patil (Niharika Patil#2830)
 - Annie Prrince (annie#5677)
